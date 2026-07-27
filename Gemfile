@@ -24,6 +24,7 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
+    gem 'sass-embedded', '~> 1.83.0'  # pinned for macOS 13 compat (1.84+ uses Dart 3.7 requiring macOS 14+)
 
     gem 'classifier-reborn'  # used for content categorization during the build
 end
