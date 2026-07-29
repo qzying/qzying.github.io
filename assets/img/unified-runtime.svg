@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="app" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="api" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="cpu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="trt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="hrz" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="44" text-anchor="middle" fill="#e2e8f0" font-size="22" font-weight="700" letter-spacing="0.5">Unified Runtime Architecture</text>
+  <text x="400" y="66" text-anchor="middle" fill="#94a3b8" font-size="13">Compile-time multi-backend inference</text>
+
+  <!-- Application Layer -->
+  <rect x="260" y="92" width="280" height="44" rx="8" fill="url(#app)" filter="url(#shadow)"/>
+  <text x="400" y="119" text-anchor="middle" fill="#fff" font-size="15" font-weight="600">Application Code</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="136" x2="400" y2="160" stroke="#475569" stroke-width="2"/>
+  <polygon points="395,158 400,168 405,158" fill="#475569"/>
+
+  <!-- Common API Layer -->
+  <rect x="280" y="168" width="240" height="40" rx="8" fill="url(#api)" filter="url(#shadow)"/>
+  <text x="400" y="193" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">Common API</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="208" x2="400" y2="232" stroke="#475569" stroke-width="2"/>
+  <polygon points="395,230 400,240 405,230" fill="#475569"/>
+
+  <!-- Backend Selection -->
+  <rect x="310" y="240" width="180" height="32" rx="6" fill="#334155" stroke="#475569" stroke-width="1"/>
+  <text x="400" y="260" text-anchor="middle" fill="#cbd5e1" font-size="12">Backend Selection (compile time)</text>
+
+  <!-- Three arrows down -->
+  <line x1="190" y1="272" x2="190" y2="296" stroke="#475569" stroke-width="1.5"/>
+  <polygon points="186,294 190,302 194,294" fill="#475569"/>
+  <line x1="400" y1="272" x2="400" y2="296" stroke="#475569" stroke-width="1.5"/>
+  <polygon points="396,294 400,302 404,294" fill="#475569"/>
+  <line x1="610" y1="272" x2="610" y2="296" stroke="#475569" stroke-width="1.5"/>
+  <polygon points="606,294 610,302 614,294" fill="#475569"/>
+
+  <!-- CPU Backend -->
+  <rect x="80" y="302" width="220" height="56" rx="8" fill="url(#cpu)" filter="url(#shadow)"/>
+  <text x="190" y="326" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">CPU</text>
+  <text x="190" y="344" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="11">Built-in C++ Executor</text>
+
+  <!-- TensorRT Backend -->
+  <rect x="290" y="302" width="220" height="56" rx="8" fill="url(#trt)" filter="url(#shadow)"/>
+  <text x="400" y="326" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">TensorRT</text>
+  <text x="400" y="344" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="11">NVIDIA Orin / Thor</text>
+
+  <!-- Horizon Backend -->
+  <rect x="500" y="302" width="220" height="56" rx="8" fill="url(#hrz)" filter="url(#shadow)"/>
+  <text x="610" y="326" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Horizon</text>
+  <text x="610" y="344" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="11">J6 BPU</text>
+
+  <!-- Bottom caption -->
+  <text x="400" y="385" text-anchor="middle" fill="#64748b" font-size="11">One model → one chip at deploy time. Identical application code across all backends.</text>
+</svg>
