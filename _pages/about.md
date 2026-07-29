@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Beijing, China</p>
-    <p>qzying [at] aliyun [dot] com</p>
+    <p>qzying@aliyun.com</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-**Zhongying Qiu** is an engineer based in Beijing, working at the intersection of 3D computer vision, autonomous driving, and AI inference systems. He received his B.E. (2013) and M.E. (2016) degrees from Beihang University (Beijing University of Aeronautics and Astronautics).
+**Zhongying Qiu** is an engineer based in Beijing, working at the intersection of autonomous driving and AI inference systems. He received his B.E. (2013) and M.E. (2016) degrees from Beihang University (Beijing University of Aeronautics and Astronautics).
 
 His work focuses on building perception systems for autonomous vehicles. Recent publications include weakly-supervised monocular 3D object detection (CVPR 2023), mapless vision-and-language navigation for autonomous driving (DriveVLN, CVPR 2026), and hierarchical compositional text-to-image generation via reinforcement learning (HiCoGen, CVPR 2026). His earlier work on robust air traffic flow estimation was published at DASC 2015, reflecting a long-standing interest in safety-critical intelligent systems.
 
