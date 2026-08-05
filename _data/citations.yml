@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-03'
+  last_updated: '2026-08-05'
 papers:
   LQBNCFsAAAAJ:2osOgNQ5qMEC:
     citations: 0
@@ -8,7 +8,7 @@ papers:
   LQBNCFsAAAAJ:9yKSN-GCB0IC:
     citations: 6
     title: 'Hicogen: Hierarchical compositional text-to-image generation in diffusion models via reinforcement learning'
-    year: '2025'
+    year: '2026'
   LQBNCFsAAAAJ:d1gkVwhDpl0C:
     citations: 1
     title: SM-Agent Solution for AV2 2025 Scenario Mining Challenge
@@ -18,7 +18,7 @@ papers:
     title: 'DriveVLN: Towards Mapless Vision-and-Language Navigation in Autonomous Driving'
     year: '2026'
   LQBNCFsAAAAJ:u-x6o8ySG0sC:
-    citations: 41
+    citations: 42
     title: Weakly supervised monocular 3d object detection using multi-view projection and direction consistency
     year: '2023'
   LQBNCFsAAAAJ:u5HHmVD_uO8C:
